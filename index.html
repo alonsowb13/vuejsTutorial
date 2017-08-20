@@ -16,6 +16,11 @@
             <img :src="imagen" />
             </div>
             <button @click="toggleMostrar">Mostrar/Ocultar</button>
+            <ul>
+                <li v-for="(curso, index) in cursos" :key="index">
+                    <a :href="curso.url">{{curso.name}}</a>
+                </li>
+            </ul>
         </div>
     </template>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
