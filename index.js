@@ -1,14 +1,6 @@
 const app = new Vue({
     el: '#app',
-    template: `
-    <div>
-        <div v-if="mostrar">
-        {{ message }}
-        <img :src="imagen" />
-        </div>
-        <button @click="toggleMostrar">Mostrar/Ocultar</button>
-    </div>
-    `,
+    template: '#ejemplo',
     data: {
         mostrar: true,
         message: 'Hola Vue!',

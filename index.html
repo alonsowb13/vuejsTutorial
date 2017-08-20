@@ -9,6 +9,15 @@
 <body>
     <div id="app">
     </div>
+    <template id="ejemplo">
+        <div>
+            <div v-if="mostrar">
+            {{ message }}
+            <img :src="imagen" />
+            </div>
+            <button @click="toggleMostrar">Mostrar/Ocultar</button>
+        </div>
+    </template>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
     <script src="index.js"></script>
 </body>
